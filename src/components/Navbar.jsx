@@ -3,13 +3,13 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsDownload, BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 
-const Navbar = ()=> {
+const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#190a2f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
             <div>
                 <h1 className='text-2sm font-signature ml-2'>Sasangka Lambang k</h1>
             </div>
@@ -54,7 +54,7 @@ const Navbar = ()=> {
                 <li className='py-6 text-4xl'>
                     {' '}
                     <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-                     About
+                        About
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
@@ -80,7 +80,10 @@ const Navbar = ()=> {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-blue-600 rounded-r-lg '>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/https://id.linkedin.com/in/sasangka-lambang-1187a2237'>
+                        <a
+                            className='flex justify-between items-center w-full text-gray-300'
+                            href='/https://id.linkedin.com/in/sasangka-lambang-1187a2237'
+                        >
                             Linkedin <FaLinkedin size={30} />
                         </a>
                     </li>

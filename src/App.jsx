@@ -1,6 +1,6 @@
 // import About from './components/About';
 // import Contact from './components/Contact';
-// import Home from './components/Home';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 // import Skills from './components/Skills';
 // import Works from './components/Works';
@@ -8,7 +8,8 @@ import Navbar from './components/Navbar';
 function App() {
     return (
         <div className='App'>
-            <Navbar/>
+            <Navbar />
+            <Home />
         </div>
     );
 }

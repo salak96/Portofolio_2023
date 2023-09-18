@@ -18,13 +18,16 @@ Kemampuan saya mencakup:
 -   Integrasi API:
     Saya memiliki pengalaman dalam mengintegrasikan berbagai API pihak ketiga untuk meningkatkan fungsionalitas dan data yang dapat diakses oleh pengguna.
 
-## NPM Packages 
+## NPM Packages
 
-- icon 
+-   icon
+
 ```bash
 npm install @react-icons/all-files --save
 ```
-- scrollreveal
+
+-   scrollreveal
+
 ```bash
 npm install scrollreveal
 ```
