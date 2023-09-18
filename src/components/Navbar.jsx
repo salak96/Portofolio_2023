@@ -9,7 +9,7 @@ const Navbar = ()=> {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#190a2f] text-gray-300'>
             <div>
                 <h1 className='text-2sm font-signature ml-2'>SLK</h1>
             </div>
