@@ -15,7 +15,6 @@ Saya selalu berusaha untuk meningkatkan kinerja aplikasi web dengan mengoptimalk
 Saya memahami pentingnya responsif desain dalam dunia web modern, dan saya telah menguasai teknik-teknik untuk memastikan situs web terlihat bagus dan berfungsi dengan baik di berbagai perangkat dan ukuran layar.
 
 - Integrasi API: 
-
 Saya memiliki pengalaman dalam mengintegrasikan berbagai API pihak ketiga untuk meningkatkan fungsionalitas dan data yang dapat diakses oleh pengguna.
 
 
