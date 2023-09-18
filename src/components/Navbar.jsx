@@ -97,7 +97,7 @@ const Navbar = () => {
                             Email <HiOutlineMail size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#161536e7] rounded-r-lg'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#21ffb1e7] rounded-r-lg'>
                         <a className='flex justify-between items-center w-full text-gray-300' href='/resume.pdf'>
                             Resume <BsDownload size={30} />
                         </a>

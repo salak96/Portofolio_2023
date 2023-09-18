@@ -13,13 +13,14 @@ const About = () => {
                     </div>
                     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                         <div className='sm:text-right text-4xl font-bold'>
-                            <p>Hi. I'm Hansen Feriandy, nice to meet you. Please take a look around.</p>
+                            <p>Hi. Aku Sasangka Lambang Senang Mempelajari Teknologi Web </p>
                         </div>
                         <div>
                             <p>
-                                A software developer with experience in building Responsive and Scalable Web apps. I am well-knowledged in UI/UX
-                                principles and practices. In addition to software development, I am also a technical writer--simplifying
-                                topics/concepts on the web.
+                            Profil Profesional
+                            Seorang programmer web berpengalaman dengan lebih dari 1 tahun pengalaman dalam mengembangkan solusi web yang inovatif.
+                            Memiliki pemahaman yang kuat tentang teknologi web terkini dan kemampuan untuk merancang, mengembangkan, dan mengoptimalkan aplikasi web yang memenuhi kebutuhan klien. 
+                            Berkomitmen untuk menciptakan pengalaman pengguna yang menakjubkan dan terus meningkatkan keterampilan dalam pengembangan web.
                             </p>
                         </div>
                     </div>
