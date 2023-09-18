@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsDownload, BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from "react-scroll";
 
 const Navbar = ()=> {
@@ -11,7 +11,7 @@ const Navbar = ()=> {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#190a2f] text-gray-300'>
             <div>
-                <h1 className='text-2sm font-signature ml-2'>SLK</h1>
+                <h1 className='text-2sm font-signature ml-2'>Sasangka Lambang k</h1>
             </div>
             <ul className='hidden md:flex gap-x-8'>
                 <li>
@@ -79,24 +79,24 @@ const Navbar = ()=> {
             {/* Social icons */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-blue-600'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-blue-600 rounded-r-lg '>
                         <a className='flex justify-between items-center w-full text-gray-300' href='/https://id.linkedin.com/in/sasangka-lambang-1187a2237'>
                             Linkedin <FaLinkedin size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-black'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-black rounded-r-lg'>
                         <a className='flex justify-between items-center w-full text-gray-300' href='/https://github.com/salak96'>
                             Github <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#ff3939]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#d13838] rounded-r-lg'>
                         <a className='flex justify-between items-center w-full text-gray-300' href='/mailto:lambangsasangka0@gmail.com'>
                             Email <HiOutlineMail size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#565f69]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#161536e7] rounded-r-lg'>
                         <a className='flex justify-between items-center w-full text-gray-300' href='/resume.pdf'>
-                            Resume <BsFillPersonLinesFill size={30} />
+                            Resume <BsDownload size={30} />
                         </a>
                     </li>
                 </ul>
