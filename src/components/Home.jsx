@@ -9,11 +9,10 @@ const Home = () => {
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
                     <h2 className='text-2xl sm:text-3xl font-bold text-white'>
-                        Hi saya , Sasangka lambang programmer web berpengalaman dengan kurang lebih 1 tahun pengalaman dalam pengembangan aplikasi web
+                         Hello, I'm Sasangka <br></br>Front end Developer
                     </h2>
-                    <p className='text-gray-500 py-4 max-w-md'>
-                        Memiliki pemahaman yang kuat tentang teknologi web terkini dan kemampuan untuk merancang, mengembangkan, dan mengoptimalkan
-                        aplikasi web yang memenuhi kebutuhan klien.
+                    <p className='text-gray-500 py-5 max-w-md'>
+                       Hallo, perkenalkan nama saya Sasangka. Saya adalah seorang programmer web yang berpengalaman dengan lebih dari 1 tahun pengalaman dalam mengembangkan solusi web yang inovatif.
                     </p>
                     <div>
                         <Link
