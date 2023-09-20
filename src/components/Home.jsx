@@ -12,7 +12,7 @@ const Home = () => {
                          Hello, I'm Sasangka <br></br>Front end Developer
                     </h2>
                     <p className='text-gray-500 py-5 max-w-md'>
-                       Hallo, perkenalkan nama saya Sasangka. Saya adalah seorang programmer web yang berpengalaman dengan lebih dari 1 tahun pengalaman dalam mengembangkan solusi web yang inovatif.
+                        I'm a front end developer specializing in building (and occasionally designing) exceptional digital experiences.
                     </p>
                     <div>
                         <Link
