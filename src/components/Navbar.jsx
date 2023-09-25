@@ -2,41 +2,42 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsDownload, BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsDownload } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-            <div>
-                <h1 className='text-2sm font-signature ml-2'>Sasangka Lambang k</h1>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1c285642] text-gray-300'>
+            <div className='md:flex gap-x-8'>
+              <button className='hidden md:flex text-2xl font-bold text-cyan-500' 
+              >SLK</button>
             </div>
             <ul className='hidden md:flex gap-x-8'>
                 <li>
                     <Link to='home' smooth={true} duration={500}>
-                        Home
+                        <h6 text-4xl className='text-cyan-500'>Home</h6>
                     </Link>
                 </li>
                 <li>
                     <Link to='about' smooth={true} duration={500}>
-                        About
+                    <h6 text-4xl className='text-cyan-500'>About</h6>
                     </Link>
                 </li>
                 <li>
                     <Link to='skills' smooth={true} duration={500}>
-                        Skills
+                    <h6 text-4xl className='text-cyan-500'>Skills</h6>
                     </Link>
                 </li>
                 <li>
                     <Link to='work' smooth={true} duration={500}>
-                        Work
+                    <h6 text-4xl className='text-cyan-500'>Works</h6>
                     </Link>
                 </li>
                 <li>
                     <Link to='contact' smooth={true} duration={500}>
-                        Contact
+                    <h6 text-4xl className='text-cyan-500'>Contact</h6>
                     </Link>
                 </li>
             </ul>
@@ -82,18 +83,18 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-blue-600 rounded-r-lg '>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/https://id.linkedin.com/in/sasangka-lambang-1187a2237'
+                            href='https://id.linkedin.com/in/sasangka-lambang-1187a2237'
                         >
                             Linkedin <FaLinkedin size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-black rounded-r-lg'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/https://github.com/salak96'>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/salak96'>
                             Github <FaGithub size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-[#d13838] rounded-r-lg'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/mailto:lambangsasangka0@gmail.com'>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='mailto:lambangsasangka0@gmail.com'>
                             Email <HiOutlineMail size={30} />
                         </a>
                     </li>
