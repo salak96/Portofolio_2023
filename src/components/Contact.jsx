@@ -13,7 +13,6 @@ const Contact = () => {
                 console.log(result.text);
                 console.log('Message sent!');
                 toast.success('Email sent!'); // Tampilkan pop-up setelah pesan terkirim
-                window.alert('Email sent!');
             },
             (error) => {
                 console.log(error.text);
