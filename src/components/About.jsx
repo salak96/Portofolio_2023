@@ -15,11 +15,14 @@ const About = () => {
                     </div>
                     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                         <div className='sm:text-right text-5xl font-bold'>
-                        <p> Web Mastery, Lifelong Learner</p>
+                            <p> Web Mastery, Lifelong Learner</p>
                         </div>
                         <div>
                             <p>
-                            An experienced web programmer with approximately 1 year of experience in developing innovative web solutions. Possesses a deep understanding of the latest web technologies and the skills to design, develop, and optimize web applications to meet client needs. Committed to creating exceptional user experiences and continuously enhancing web development skills.
+                                An experienced web programmer with approximately 1 year of experience in developing innovative web solutions.
+                                Possesses a deep understanding of the latest web technologies and the skills to design, develop, and optimize web
+                                applications to meet client needs. Committed to creating exceptional user experiences and continuously enhancing web
+                                development skills.
                             </p>
                         </div>
                     </div>

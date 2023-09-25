@@ -1,24 +1,71 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_afm0afs', 'template_g5ks3bk', form.current, 'sY9mWDj-1RcErjIZt').then(
+            (result) => {
+                console.log(result.text);
+                console.log('Message sent!');
+                 // Tampilkan pop-up setelah pesan terkirim
+               window.alert('Message sent!');
+            },
+            (error) => {
+                console.log(error.text);
+            },
+        );
+    };
+
     return (
         <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
-            <div className='flex flex-col max-w-[600px] w-full'>
+            <div className='flex flex-col max-w-[600px] w-full bg-white rounded-lg p-8 shadow-md'>
                 <div className='pb-8 flex flex-col justify-center w-full h-full items-center'>
-                    <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-300'>Contact</p>
+                    <p className='text-4xl font-bold text-cyan-500'>Contact</p>
                 </div>
-                <input className='bg-[#ccd6f6] p-2' type='text' placeholder='Name' name='name' />
-                <input className='my-4 p-2 bg-[#ccd6f6]' type='email' placeholder='Email' name='email' />
-                <textarea className='bg-[#ccd6f6] p-2' name='message' rows='10' placeholder='Message'></textarea>
-                <button className='bg-blue-500 hover:bg-red-700 font-bold border-blue-700 rounded text-white border hover:border-white hover:border-500 px-4 py-3 my-8 mx-auto flex items-center'>
-                    <a
-                        href="https://wa.me/6285642268279?text=Hello%20Sasangka%20Saya%20Ingin%20Konsultasi%20Teknologi%20Web"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-4'>
+                    <label htmlFor='user_name' className='text-gray-700 font-semibold'>
+                        Name
+                    </label>
+                    <input
+                        type='text'
+                        id='user_name'
+                        name='user_name'
+                        placeholder='Lambang'
+                        className='border border-gray-300 rounded-lg py-2 px-3'
+                    />
+
+                    <label htmlFor='user_email' className='text-gray-700 font-semibold'>
+                        Email
+                    </label>
+                    <input
+                        type='email'
+                        id='user_email'
+                        name='user_email'
+                        placeholder='lambangsasangka0@gmail.com'
+                        className='border border-gray-300 rounded-lg py-2 px-3'
+                    />
+
+                    <label htmlFor='message' className='text-gray-700 font-semibold'>
+                        Message
+                    </label>
+                    <textarea
+                        id='message'
+                        name='message'
+                        placeholder='Saya ingin mengajukan permintaan pengembangan front-end untuk proyek website kami. Proyek ini sangat penting bagi kami dan kami yakin bahwa tim Anda memiliki kemampuan yang dibutuhkan untuk membantu kami mencapai tujuan kami.
+'
+                        className='border border-gray-300 rounded-lg py-2 px-3 h-32'
+                    ></textarea>
+                    <button
+                        type='submit'
+                        className='bg-cyan-500 text-white py-2 px-4 rounded-lg hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50'
                     >
-                        Send Message
-                    </a>
-                </button>
+                        Send
+                    </button>
+                </form>
             </div>
         </div>
     );
