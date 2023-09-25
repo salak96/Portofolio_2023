@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 const About = () => {
@@ -13,14 +15,11 @@ const About = () => {
                     </div>
                     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                         <div className='sm:text-right text-5xl font-bold'>
-                            <p>Hello I'm Sasangka a Front end Developer </p>
+                        <p> Web Mastery, Lifelong Learner</p>
                         </div>
                         <div>
                             <p>
-                            Profil Profesional
-                            Seorang programmer web berpengalaman dengan lebih dari 1 tahun pengalaman dalam mengembangkan solusi web yang inovatif.
-                            Memiliki pemahaman yang kuat tentang teknologi web terkini dan kemampuan untuk merancang, mengembangkan, dan mengoptimalkan aplikasi web yang memenuhi kebutuhan klien. 
-                            Berkomitmen untuk menciptakan pengalaman pengguna yang menakjubkan dan terus meningkatkan keterampilan dalam pengembangan web.
+                            An experienced web programmer with approximately 1 year of experience in developing innovative web solutions. Possesses a deep understanding of the latest web technologies and the skills to design, develop, and optimize web applications to meet client needs. Committed to creating exceptional user experiences and continuously enhancing web development skills.
                             </p>
                         </div>
                     </div>
