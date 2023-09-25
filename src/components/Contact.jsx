@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
     const form = useRef();
@@ -11,12 +12,12 @@ const Contact = () => {
             (result) => {
                 console.log(result.text);
                 console.log('Message sent!');
-                 // Tampilkan pop-up setelah pesan terkirim
-               window.alert('Message sent!');
+                toast.success('Email sent!'); // Tampilkan pop-up setelah pesan terkirim
+                window.alert('Email sent!');
             },
             (error) => {
                 console.log(error.text);
-            },
+            }
         );
     };
 
@@ -55,8 +56,7 @@ const Contact = () => {
                     <textarea
                         id='message'
                         name='message'
-                        placeholder='Saya ingin mengajukan permintaan pengembangan front-end untuk proyek website kami. Proyek ini sangat penting bagi kami dan kami yakin bahwa tim Anda memiliki kemampuan yang dibutuhkan untuk membantu kami mencapai tujuan kami.
-'
+                        placeholder='Saya ingin mengajukan permintaan pengembangan front-end untuk proyek website kami. Proyek ini sangat penting bagi kami dan kami yakin bahwa tim Anda memiliki kemampuan yang dibutuhkan untuk membantu kami mencapai tujuan kami.'
                         className='border border-gray-300 rounded-lg py-2 px-3 h-32'
                     ></textarea>
                     <button
@@ -67,6 +67,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            <Toaster position="bottom-right" reverseOrder={false} /> {/* Pindahkan Toaster di luar form */}
         </div>
     );
 };
