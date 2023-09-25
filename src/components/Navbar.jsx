@@ -11,8 +11,7 @@ const Navbar = () => {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1c285642] text-gray-300'>
             <div className='md:flex gap-x-8'>
-              <button className='hidden md:flex text-2xl font-bold text-cyan-500' 
-              >SLK</button>
+             <h6><a href="/" className='text-2xl font-bold text-cyan-500'>SLK</a></h6>
             </div>
             <ul className='hidden md:flex gap-x-8'>
                 <li>

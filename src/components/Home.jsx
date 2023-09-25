@@ -8,13 +8,11 @@ const Home = () => {
         <div name='home' className='h-screen w-full bg-[#0a192f]'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-2xl sm:text-3xl font-bold text-white'>
+                    <h2 className='text-2xl sm:text-5xl font-bold text-white'>
                         Hello, I'm Sasangka <br></br>Front end Developer
                     </h2>
                     <p className='text-gray-500 py-5 max-w-md'>
-                        I'm a Front end developer with a particular interest in making
-                        things simple and automating daily tasks. I also have a 
-                        background in web design and am proficient with HTML, CSS, React JS
+                    I'm a Frontend Developer with a particular interest in making things simple and automating daily tasks. I also have a background in web design and I am proficient with HTML & CSS, JavaScript and React JS.
                     </p>
                     <div>
                         <Link
