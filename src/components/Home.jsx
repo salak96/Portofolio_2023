@@ -11,8 +11,9 @@ const Home = () => {
                     <h2 className='text-2xl sm:text-3xl font-bold text-white'>
                          Hello, I'm Sasangka <br></br>Front end Developer
                     </h2>
-                    <p className='text-gray-500 py-5 max-w-md'>
-                       Hallo, perkenalkan nama saya Sasangka. Saya adalah seorang programmer web yang berpengalaman dengan lebih dari 1 tahun pengalaman dalam mengembangkan solusi web yang inovatif.
+                    <p className='text-gray-500 py-4 max-w-md'>
+                        Memiliki pemahaman yang kuat tentang teknologi web terkini dan kemampuan untuk merancang, mengembangkan, dan mengoptimalkan
+                        aplikasi web yang memenuhi kebutuhan klien.
                     </p>
                     <div>
                         <Link
@@ -29,8 +30,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={me} alt='myself' className='rounded-2xl mx-auto w-2/3 md:w-full' />
-                </div>
+                    <img src={me} alt="me" className='object-scale-down h-48 w-full
+                    ' />
+                </div> 
             </div>
         </div>
     );
