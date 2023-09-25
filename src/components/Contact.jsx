@@ -34,7 +34,7 @@ const Contact = () => {
                         type='text'
                         id='user_name'
                         name='user_name'
-                        placeholder='Lambang'
+                        placeholder='PT. ABC'
                         className='border border-gray-300 rounded-lg py-2 px-3'
                     />
 
@@ -45,7 +45,7 @@ const Contact = () => {
                         type='email'
                         id='user_email'
                         name='user_email'
-                        placeholder='lambangsasangka0@gmail.com'
+                        placeholder='PT_ABC@example.com'
                         className='border border-gray-300 rounded-lg py-2 px-3'
                     />
 
@@ -55,7 +55,7 @@ const Contact = () => {
                     <textarea
                         id='message'
                         name='message'
-                        placeholder='Saya ingin mengajukan permintaan pengembangan front-end untuk proyek website kami. Proyek ini sangat penting bagi kami dan kami yakin bahwa tim Anda memiliki kemampuan yang dibutuhkan untuk membantu kami mencapai tujuan kami.'
+                        placeholder='Saya ingin mengajukan permintaan pengembangan front-end untuk proyek website kami.'
                         className='border border-gray-300 rounded-lg py-2 px-3 h-32'
                     ></textarea>
                     <button
