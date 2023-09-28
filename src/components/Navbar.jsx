@@ -82,7 +82,7 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[1px] duration-300 bg-blue-600 rounded-r-lg '>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='https://id.linkedin.com/in/sasangka-lambang-1187a2237'
+                            href='https://www.linkedin.com/in/sasangka-lambang-12172b293/'
                         >
                             Linkedin <FaLinkedin size={30} />
                         </a>
